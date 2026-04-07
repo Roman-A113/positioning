@@ -49,3 +49,37 @@
     justify-content: center;
     font-size: 25px;
 }
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+}
+
+.progress-bar-external {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    font-weight: bold;
+}
+
+.progress-bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: red;
+}
+
+.loading {
+    z-index: 2;
+}
