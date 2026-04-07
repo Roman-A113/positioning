@@ -189,7 +189,7 @@ body {
     overflow: hidden;
     background: #fff;
     padding: 0 20px;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+
 }
 
 .accordion-toggle:checked + .accordion-title + .accordion-content {
