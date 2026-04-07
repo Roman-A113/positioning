@@ -88,26 +88,42 @@ body {
     width: 100%;
     height: 30px;
     background-color: #eee;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: black;
     font-weight: bold;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.loading {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    user-select: none;
+}
+
+.text-black {
+    color: black;
+    z-index: 1;
 }
 
 .progress-bar-inner {
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
     height: 100%;
+    width: 0%;
     background-color: red;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-.loading {
-    z-index: 2;
+.text-white {
+    color: white;
+    flex-shrink: 0;
 }
 
 .lightbox {
