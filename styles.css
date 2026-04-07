@@ -18,6 +18,31 @@
     top: 0;
     left: 0;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.open-box {
+    margin: 40px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.hidden {
+    display: none;
+}
 
 .circle2 {
     width: 60px;
@@ -82,4 +107,24 @@
 
 .loading {
     z-index: 2;
+.lightbox {
+    width: 640px;
+    box-sizing: border-box;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    padding: 32px 24px 24px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
 }
